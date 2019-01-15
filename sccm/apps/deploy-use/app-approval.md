@@ -80,7 +80,9 @@ With these prerequisites, recipients receive an email with notification of the r
     - Enable [Enhanced HTTP](/sccm/core/plan-design/hierarchy/enhanced-http) (recommended)  
 
         > [!Note]  
-        > When the site creates a certificate for the SMS Provider, it won't be trusted by the web browser on the client. Based on your security settings, when responding to an application request, you may see a security warning.  
+        > When the site creates a certificate for the SMS Provider, it won't be trusted by the web browser on the client. Based on your security settings, when responding to an application request, you may see a security warning. 
+        > [!Note]  
+        > IIS should be installed on provider machines to enable the usage of a certificate issued for the SMS Provider. 
 
     - Manually bind a PKI-based certificate to port 443 in IIS on the server that hosts the SMS Provider role  
 
